@@ -24,6 +24,8 @@ modified: '2026-04-28'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/jefferies-financial-domain-security.yml
   - type: Website
     url: https://www.jefferies.com/
   - type: About
@@ -46,6 +48,8 @@ common:
     url: https://twitter.com/Jefferies
   - type: Instagram
     url: https://www.instagram.com/Jefferies
+  - url: https://www.jefferies.com/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
