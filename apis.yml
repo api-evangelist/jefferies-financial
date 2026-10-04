@@ -33,7 +33,7 @@ tags:
   - Asset Management
   - Capital Markets
   - Stocks
-  - Financial-Services
+  - Financial Services
   - Fixed Income
   - Fortune 500
   - Investment Banking
@@ -49,6 +49,7 @@ tags_raw:
   - Investment Banking
   - Research
   - Wealth Management
+  - Financial-Services
 url: >-
   https://raw.githubusercontent.com/api-evangelist/jefferies-financial/refs/heads/main/apis.yml
 created: '2026-03-21'
