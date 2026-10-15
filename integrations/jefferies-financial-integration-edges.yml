@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/jefferies-financial/integrations
 - https://zapier.com/apps/jefferies-financial-group/integrations
@@ -10,9 +10,73 @@ checked:
 - https://composio.dev/toolkits/jefferies-financial
 - https://monid.ai/tools/jefferies-financial
 - https://n8n.io/integrations/jefferies-financial/
+- https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
 - https://zapier.com/apps/jefferies-financial-group/integrations
 - https://zapier.com/apps/jefferies-financial/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: ISO 10383 (MIC)
+  partner: null
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+  source: mic
+  category: registered trading venues and market segments
+  contract_reference:
+    register: ISO 10383 Market Identifier Codes (ISO 20022 registration authority)
+    spec_file: null
+    standard: ISO 10383
+    role: venue operator
+    matched_domain: jefferies.com
+    matched_by: domain+verified:jefferies.com
+    categories:
+    - OTHR
+    - SINT
+    operating_mics:
+    - JEFA
+    - JEFE
+    - JISI
+    mics:
+    - mic: JESI
+      operating_mic: JEFE
+      segment: SGMT
+      market: JEFFERIES EUROPE - SYSTEMATIC INTERNALISER
+      category: SINT
+      legal_name: ''
+      country: DE
+    - mic: JEFE
+      operating_mic: JEFE
+      segment: OPRT
+      market: JEFFERIES EUROPE
+      category: SINT
+      legal_name: JEFFERIES GMBH
+      country: DE
+    - mic: JISI
+      operating_mic: JISI
+      segment: OPRT
+      market: JEFFERIES INTERNATIONAL
+      category: SINT
+      legal_name: JEFFERIES GMBH
+      country: GB
+    - mic: JEFS
+      operating_mic: JISI
+      segment: SGMT
+      market: JEFFERIES INTERNATIONAL - SYSTEMATIC INTERNALISER
+      category: SINT
+      legal_name: ''
+      country: GB
+    - mic: JEFA
+      operating_mic: JEFA
+      segment: OPRT
+      market: JEFFERIES ASIA
+      category: OTHR
+      legal_name: JEFFERIES JAPAN COMPANY LIMITED
+      country: JP
+    detected_by: sweep-capital-markets.py
+    detected: '2026-10-15'
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
 templates: []
